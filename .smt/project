@@ -1,0 +1,42 @@
+{
+  "name": "test-repo",
+  "default_executable": {
+    "type": "sumatra.programs.PythonExecutable",
+    "path": "/home/asinha/dump/sumatra-virt/bin/python3",
+    "version": "3.6.5",
+    "options": "",
+    "name": "Python"
+  },
+  "default_repository": {
+    "type": "sumatra.versioncontrol._git.GitRepository",
+    "url": "/home/asinha/Documents/02_Code/00_repos/00_mine/sumatra-nest-cluster-test",
+    "upstream": "git@github.com:sanjayankur31/sumatra-nest-cluster-test.git"
+  },
+  "default_launch_mode": {
+    "type": "sumatra.launch.SerialLaunchMode",
+    "working_directory": "/home/asinha/Documents/02_Code/00_repos/00_mine/sumatra-nest-cluster-test",
+    "options": null
+  },
+  "data_store": {
+    "type": "sumatra.datastore.filesystem.FileSystemDataStore",
+    "root": "/home/asinha/Documents/02_Code/00_repos/00_mine/sumatra-nest-cluster-test/Data"
+  },
+  "record_store": {
+    "type": "sumatra.recordstore.django_store.DjangoRecordStore",
+    "db_file": "/home/asinha/Documents/02_Code/00_repos/00_mine/sumatra-nest-cluster-test/.smt/records"
+  },
+  "default_main_file": "test.py",
+  "on_changed": "error",
+  "description": "",
+  "data_label": null,
+  "_most_recent": "20180512-181422",
+  "input_datastore": {
+    "type": "sumatra.datastore.filesystem.FileSystemDataStore",
+    "root": "/"
+  },
+  "label_generator": "timestamp",
+  "timestamp_format": "%Y%m%d-%H%M%S",
+  "sumatra_version": "0.7.4",
+  "allow_command_line_parameters": true,
+  "plugins": []
+}
